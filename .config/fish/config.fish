@@ -1,3 +1,4 @@
+source ~/.config/fish/alias.fish
 if status is-interactive
     # Start tmux
     if not set -q TMUX
@@ -7,15 +8,7 @@ if status is-interactive
             tmux -u new-session -s home
         end
     end
-    
-    alias vi="nvim"
-    alias vim="nvim"
-    alias oldvim="nvim"
-    alias v="nvim"
-    alias p="termux-clipboard-get"
-    alias c="termux-clipboard-set"
-    bind -M insert \cf accept-autosuggestion
-    bind -M insert \cc 'set fish_bind_mode default; commandline -f repaint'
+    source ~/.config/fish/bind.fish
     starship init fish | source
     clear
 end
