@@ -1,29 +1,61 @@
-commands to run one-time to setup:
+commands for one-time-setup:
 ```
 set -Ux EDITOR nvim
 fish_vi_key_bindings
-chsh -s fish
+chsh -s $(which fish)
+fish_add_path ~/.local/bin/
+mkdir .virtualenvs
 ```
 
 packages:
 ```
-jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt-get update
+sudo apt install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip
+```
+
+fisher:
+```
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+```
+
+brew:
+```
+sudo curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | /bin/bash
+fish_add_path /home/linuxbrew/.linuxbrew/bin/
 ```
 
 languages:
 ```
-nodejs stylua luarocks lua-language-server golang gopls rust-analyzer rust pyright
+sudo apt install gopls luarocks python3-venv python-is-python3 python3-pip
+
+# rustup
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# rust_analyzer
+rustup component add rust-analyzer
+
+# stylua
+cargo install stylua 
+
+# go and luaLS
+brew install go lua-language-server
+
+# nvm and latest node
+fisher install jorgebucaran/nvm.fish
+nvm install latest
+
+# pyright and autopep8
+pip install autopep8 pyright
 ```
 
-pip:
+tmux plugins:
 ```
-autopep8
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+set -Ux TMUX_MANAGER_PLUGIN_PATH ~/.tmux/plugins/tpm
+tmux source ~/.tmux.conf
 ```
-
-termux-specific (install from f-droid):
-termux-api termux-tools termux-styling
- - tokyonight dark
- - source code pro
 
 other notes:
 ctrl+b then I to install plugins from tmux
@@ -36,3 +68,65 @@ must use physical keyboard to do alt+hjkl window resizing
 ---
 
 rust-analyzer's autocomplete doesn't work in a single .rs file.
+
+---
+
+wsl:
+```
+sudo apt install wslu
+```
+
+alacritty:
+https://github.com/alacritty/alacritty/issues/1663#issuecomment-1917418514
+
+`alacritty.toml`:
+```
+### SETTINGS ###
+[shell]
+program = "ubuntu"
+
+[window]
+startup_mode = "Maximized"
+
+### FONT ###
+# Download and install: https://www.nerdfonts.com/font-downloads
+[font]
+normal = { family = "SauceCodePro Nerd Font Mono" }
+bold = { family = "SauceCodePro Nerd Font Mono" }
+italic = { family = "SauceCodePro Nerd Font Mono" }
+bold_italic = { family = "SauceCodePro Nerd Font Mono" }
+size = 12
+
+
+### THEME ###
+
+# Colors (Tokyo Night)
+# Source https//github.com/zatchheems/tokyo-night-alacritty-theme
+
+# Default colors
+[colors.primary]
+background = '#1a1b26'
+foreground = '#a9b1d6'
+
+# Normal colors
+[colors.normal]
+black   = '#32344a'
+red     = '#f7768e'
+green   = '#9ece6a'
+yellow  = '#e0af68'
+blue    = '#7aa2f7'
+magenta = '#ad8ee6'
+cyan    = '#449dab'
+white   = '#787c99'
+
+# Bright colors
+[colors.bright]
+black   = '#444b6a'
+red     = '#ff7a93'
+green   = '#b9f27c'
+yellow  = '#ff9e64'
+blue    = '#7da6ff'
+magenta = '#bb9af7'
+cyan    = '#0db9d7'
+white   = '#acb0d0'
+```
