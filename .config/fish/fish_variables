@@ -1,6 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export 1:\x1d
 SETUVAR --export EDITOR:nvim
+SETUVAR --export GODEBUG:netdns\x3dcgo
 SETUVAR --export VENV_HOME:/data/data/com\x2etermux/files/home/\x2evirtualenvs
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:brblack

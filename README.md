@@ -23,7 +23,7 @@ pkg install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang 
 # languages
 pkg install nodejs stylua luarocks lua-language-server golang gopls rust-analyzer rust
 
-# starsship prompt
+# starship prompt
 curl -sS https://starship.rs/install.sh | sh
 
 # glow (for markdown rendering)
