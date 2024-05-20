@@ -99,6 +99,12 @@ program = "ubuntu"
 [window]
 startup_mode = "Maximized"
 
+# Ctrl+Space fix
+[keyboard]
+bindings = [
+	{key = "Space", mods = "Control", chars = "\u0000"},
+]
+
 ### FONT ###
 # Download and install: https://www.nerdfonts.com/font-downloads
 [font]
