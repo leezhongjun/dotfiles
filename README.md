@@ -1,4 +1,4 @@
-commands to run one-time to setup:
+commands for one-time setup:
 ```
 set -Ux EDITOR nvim
 fish_vi_key_bindings

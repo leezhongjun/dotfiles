@@ -113,6 +113,17 @@ require("lazy").setup({
 			suggestion = {
 				enabled = false,
 			},
+			filetypes = {
+				yaml = true,
+				markdown = true,
+				help = true,
+				gitcommit = true,
+				gitrebase = true,
+				hgcommit = true,
+				svn = true,
+				cvs = true,
+				["."] = true,
+			},
 		},
 	},
 	{
@@ -510,6 +521,7 @@ require("lazy").setup({
 					--  This will auto-import if your LSP supports it.
 					--  This will expand snippets if the LSP sent a snippet.
 					["<C-y>"] = cmp.mapping.confirm({ select = true }),
+					["<Tab"] = cmp.mapping.confirm({ select = true }),
 					["<C-e>"] = cmp.mapping.close(),
 
 					-- ["<CR>"] = cmp.mapping.confirm({ select = true }),
