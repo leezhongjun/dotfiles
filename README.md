@@ -4,7 +4,8 @@ set -Ux EDITOR nvim
 fish_vi_key_bindings
 chsh -s fish
 fish_add_path ~/.local/bin/
-fish_add_path ~/go/bin
+fish_add_path ~/go/bin/
+fish_add_path ~/.cargo/bin/
 ```
 
 tmux plugins:
@@ -13,6 +14,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 set -Ux TMUX_MANAGER_PLUGIN_PATH ~/.tmux/plugins/tpm
 tmux source ~/.tmux.conf
 ```
+then press ctrl+b I to install plugins
 
 packages:
 ```
@@ -38,6 +40,11 @@ termux-specific (install from f-droid):
 termux-api termux-tools termux-styling
  - tokyonight dark
  - source code pro
+
+adb patch (for android 12+, to prevent killing phantom processes):
+```
+adb shell "settings put global settings_enable_monitor_phantom_procs false"
+```
 
 other notes:
 
