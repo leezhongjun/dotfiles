@@ -5,6 +5,8 @@ fish_vi_key_bindings
 chsh -s $(which fish)
 fish_add_path ~/.local/bin/
 mkdir .virtualenvs
+fish_add_path ~/go/bin/
+fish_add_path ~/.cargo/bin/
 ```
 
 packages:
@@ -13,6 +15,12 @@ sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
 sudo apt install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip
+
+# starship prompt
+curl -sS https://starship.rs/install.sh | sh
+
+# glow (for markdown rendering)
+go install github.com/charmbracelet/glow@latest
 ```
 
 fisher:
