@@ -51,6 +51,11 @@ vim.opt.scrolloff = 8
 -- Use <leader>p to paste over something without overwriting the buffer
 vim.keymap.set("x", "<leader>p", '"_dP')
 
+-- Clear ^M Windows endline characters when pasting
+vim.keymap.set("n", ",m", function()
+	vim.cmd(":%s/\r//g")
+end)
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
@@ -460,12 +465,13 @@ require("lazy").setup({
 			end,
 			formatters_by_ft = {
 				lua = { "stylua" },
-				-- Conform can also run multiple formatters sequentially
-				python = { "autopep8" },
+				python = { { "autopep8", "pyright" } },
 				rust = { "rustfmt" },
 				go = { "gofmt" },
 				c = { "clang-format" },
 				cpp = { "clang-format" },
+				markdown = { "markdown-toc" },
+				json = { "jq" },
 				-- javascript = { { "prettierd", "prettier" } },
 			},
 			inlay_hints = { enabled = true },

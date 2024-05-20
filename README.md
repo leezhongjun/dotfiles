@@ -28,6 +28,9 @@ curl -sS https://starship.rs/install.sh | sh
 
 # glow (for markdown rendering)
 go install github.com/charmbracelet/glow@latest
+
+# markdown-toc
+npm install -g markdown-toc
 ```
 
 pip:
