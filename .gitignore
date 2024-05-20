@@ -1,0 +1,8 @@
+/*
+!/.config
+!/.termux
+!.tmux.conf
+!.gitignore
+!README.md
+.config/gh/hosts.yml
+.config/github-copilot/hosts.json
