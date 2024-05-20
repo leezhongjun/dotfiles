@@ -131,8 +131,9 @@ require("lazy").setup({
 			},
 		},
 	},
+	-- zbirenbaum/copilot-cmp
 	{
-		"zbirenbaum/copilot-cmp",
+		"dstanberry/copilot-cmp",
 		config = true,
 		opts = {},
 	},
@@ -465,11 +466,13 @@ require("lazy").setup({
 			end,
 			formatters_by_ft = {
 				lua = { "stylua" },
-				python = { "autopep8" },
+				python = { { "autopep8", "pyright" } },
 				rust = { "rustfmt" },
 				go = { "gofmt" },
 				c = { "clang-format" },
 				cpp = { "clang-format" },
+				markdown = { "markdown-toc" },
+				json = { "jq" },
 				-- javascript = { { "prettierd", "prettier" } },
 			},
 			inlay_hints = { enabled = true },

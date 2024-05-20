@@ -56,6 +56,9 @@ nvm install latest
 
 # pyright and autopep8
 pip install autopep8 pyright
+
+# markdown-toc
+npm install -g markdown-toc
 ```
 
 tmux plugins:
