@@ -1,6 +1,6 @@
 --  kickstart.nvim
 
--- check if a global bool ih exists, if not then initialise it to true
+-- inlay hints settings
 if not _G.ih then
 	_G.ih = true
 end
@@ -655,6 +655,19 @@ require("lazy").setup({
 			--    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
 			--    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
 			--    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+		end,
+	},
+
+	{
+		"kelly-lin/ranger.nvim",
+		config = function()
+			require("ranger-nvim").setup({ replace_netrw = true })
+			vim.api.nvim_set_keymap("n", "<leader>n", "", {
+				noremap = true,
+				callback = function()
+					require("ranger-nvim").open(true)
+				end,
+			})
 		end,
 	},
 
