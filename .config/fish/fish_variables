@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
+SETUVAR --export TERM:tmux\x2d256color
 SETUVAR --export --path TMUX_MANAGER_PLUGIN_PATH:/home/zj/\x2etmux/plugins/
 SETUVAR --export --path TMUX_PLUGIN_MANAGER_PATH:/home/zj/\x2etmux/plugins/
 SETUVAR --export VENV_HOME:/home/zj/\x2evirtualenvs

@@ -14,7 +14,7 @@ packages:
 sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
-sudo apt install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang clangd unzip
+sudo apt install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang clangd unzip ranger
 
 # starship prompt
 curl -sS https://starship.rs/install.sh | sh
@@ -146,4 +146,24 @@ blue    = '#7da6ff'
 magenta = '#bb9af7'
 cyan    = '#0db9d7'
 white   = '#acb0d0'
+```
+
+wezterm (`wezterm.lua`):
+```
+local wezterm = require 'wezterm'
+local mux = wezterm.mux
+local config = {}
+
+config.color_scheme = 'tokyonight'
+config.font = wezterm.font 'SauceCodePro Nerd Font Mono'
+config.default_domain = 'WSL:Ubuntu'
+config.hide_tab_bar_if_only_one_tab = true
+
+wezterm.on('gui-startup', function(cmd)
+  local tab, pane, window = mux.spawn_window(cmd or {})
+  window:gui_window():toggle_fullscreen()
+end)
+
+
+return config
 ```

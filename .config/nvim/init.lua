@@ -377,9 +377,10 @@ require("lazy").setup({
 					-- code, if the language server you are using supports them
 					--
 					-- This may be unwanted, since they displace some of your code
-					if client and client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
+					if client and vim.lsp.inlay_hint then
 						map("<leader>th", function()
 							vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+              print("Inlay hints", vim.lsp.inlay_hint.is_enabled() and "Enabled" or "Disabled")
 						end, "[T]oggle Inlay [H]ints")
 					end
 				end,
@@ -475,7 +476,7 @@ require("lazy").setup({
 				json = { "jq" },
 				-- javascript = { { "prettierd", "prettier" } },
 			},
-			inlay_hints = { enabled = true },
+			inlay_hints = { enabled = vim.lsp.inlay_hint.is_enabled() },
 		},
 	},
 
@@ -644,6 +645,19 @@ require("lazy").setup({
 			--    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
 			--    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
 			--    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+		end,
+	},
+
+	{
+		"kelly-lin/ranger.nvim",
+		config = function()
+			require("ranger-nvim").setup({ replace_netrw = true })
+			vim.api.nvim_set_keymap("n", "<leader>n", "", {
+				noremap = true,
+				callback = function()
+					require("ranger-nvim").open(true)
+				end,
+			})
 		end,
 	},
 
