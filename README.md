@@ -18,13 +18,10 @@ then press ctrl+b I to install plugins
 
 packages:
 ```
-pkg install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip
+pkg install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger timg starship
 
 # languages
 pkg install nodejs stylua luarocks lua-language-server golang gopls rust-analyzer rust
-
-# starship prompt
-curl -sS https://starship.rs/install.sh | sh
 
 # glow (for markdown rendering)
 go install github.com/charmbracelet/glow@latest
