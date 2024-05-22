@@ -1,7 +1,7 @@
 --  kickstart.nvim
 
 -- inlay hints settings
-if not _G.ih then
+if _G.ih == nil then
 	_G.ih = true
 end
 
