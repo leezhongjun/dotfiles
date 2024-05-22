@@ -1,5 +1,10 @@
 --  kickstart.nvim
 
+-- Inlay hints
+if _G.ih == nil then
+	_G.ih = true
+end
+
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
@@ -377,12 +382,10 @@ require("lazy").setup({
 					-- code, if the language server you are using supports them
 					--
 					-- This may be unwanted, since they displace some of your code
-					if client and vim.lsp.inlay_hint then
-						map("<leader>th", function()
-							vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
-              print("Inlay hints", vim.lsp.inlay_hint.is_enabled() and "Enabled" or "Disabled")
-						end, "[T]oggle Inlay [H]ints")
-					end
+					map("<leader>th", function()
+						_G.ih = not _G.ih
+						print("Inlay hints", _G.ih and "Enabled" or "Disabled")
+					end, "[T]oggle Inlay [H]ints")
 				end,
 			})
 
@@ -476,7 +479,11 @@ require("lazy").setup({
 				json = { "jq" },
 				-- javascript = { { "prettierd", "prettier" } },
 			},
-			inlay_hints = { enabled = vim.lsp.inlay_hint.is_enabled() },
+			inlay_hints = {
+				enabled = function()
+					return _G.ih
+				end,
+			},
 		},
 	},
 
@@ -507,6 +514,9 @@ require("lazy").setup({
 			luasnip.config.setup({})
 
 			cmp.setup({
+				enabled = function()
+					return _G.ih
+				end,
 				snippet = {
 					expand = function(args)
 						luasnip.lsp_expand(args.body)
