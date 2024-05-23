@@ -4,6 +4,7 @@ alias vim="nvim"
 alias oldvim="nvim"
 alias v="nvim"
 alias tmux="tmux -u"
+alias r="ranger"
 
 function gc
     git clone "https://github.com/$argv[1]"
