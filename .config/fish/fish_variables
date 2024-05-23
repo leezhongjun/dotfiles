@@ -1,8 +1,10 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export 1:\x1d
+SETUVAR --export CFLAGS:\x2dWno\x2dnarrowing
 SETUVAR --export EDITOR:nvim
 SETUVAR --export GODEBUG:netdns\x3dcgo
+SETUVAR --export --path PKG_CONFIG_PATH:/data/data/com\x2etermux/files/usr/lib/pkgconfig
 SETUVAR --export VENV_HOME:/data/data/com\x2etermux/files/home/\x2evirtualenvs
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:brblack
@@ -33,4 +35,4 @@ SETUVAR fish_pager_color_description:yellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/data/data/com\x2etermux/files/home/\x2ecargo/bin\x1e/data/data/com\x2etermux/files/home/go/bin
+SETUVAR fish_user_paths:/data/data/com\x2etermux/files/home/bin\x1e/data/data/com\x2etermux/files/home/\x2ecargo/bin\x1e/data/data/com\x2etermux/files/home/go/bin

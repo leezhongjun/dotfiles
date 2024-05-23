@@ -3,6 +3,7 @@
 !/.termux
 !.tmux.conf
 !.gitignore
+!bin/cht.sh
 !README.md
 .config/gh/hosts.yml
 .config/github-copilot/hosts.json

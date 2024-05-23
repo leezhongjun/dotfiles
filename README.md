@@ -6,7 +6,9 @@ chsh -s fish
 fish_add_path ~/.local/bin/
 fish_add_path ~/go/bin/
 fish_add_path ~/.cargo/bin/
+fish_add_path "~/bin"
 ```
+
 
 tmux plugins:
 ```
@@ -18,10 +20,10 @@ then press ctrl+b I to install plugins
 
 packages:
 ```
-pkg install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger timg starship
+pkg install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger timg starship mdbook binutils ninja llvmgold tur-repo pandoc
 
 # languages
-pkg install nodejs stylua luarocks lua-language-server golang gopls rust-analyzer rust
+pkg install nodejs stylua luarocks lua-language-server golang gopls rust-analyzer rust python3.7
 
 # glow (for markdown rendering)
 go install github.com/charmbracelet/glow@latest
@@ -32,7 +34,7 @@ npm install -g markdown-toc
 
 pip:
 ```
-pip install pyright autopep8
+pip install pyright autopep8 pygments
 ```
 
 termux-specific (install from f-droid):
