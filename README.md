@@ -7,6 +7,7 @@ fish_add_path ~/.local/bin/
 mkdir .virtualenvs
 fish_add_path ~/go/bin/
 fish_add_path ~/.cargo/bin/
+set -gx TERM tmux-256color
 ```
 
 packages:
@@ -14,7 +15,7 @@ packages:
 sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
-sudo apt install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang clangd unzip ranger
+sudo apt install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang clangd unzip ranger pandoc
 
 # starship prompt
 curl -sS https://starship.rs/install.sh | sh
@@ -44,8 +45,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # rust_analyzer
 rustup component add rust-analyzer
 
-# stylua
-cargo install stylua 
+# stylua and mdbook
+cargo install stylua mdbook
 
 # go and luaLS
 brew install go lua-language-server
@@ -54,8 +55,8 @@ brew install go lua-language-server
 fisher install jorgebucaran/nvm.fish
 nvm install latest
 
-# pyright and autopep8
-pip install autopep8 pyright
+# pygements, pyright and autopep8
+pip install autopep8 pyright pygments
 
 # markdown-toc
 npm install -g markdown-toc
@@ -66,6 +67,12 @@ tmux plugins:
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 set -Ux TMUX_MANAGER_PLUGIN_PATH ~/.tmux/plugins/tpm
 tmux source ~/.tmux.conf
+# ctrl+b then I to install plugins from tmux
+```
+
+copilot:
+```
+gh extensions install github/gh-copilot
 ```
 
 other notes:
