@@ -65,3 +65,9 @@ must use physical keyboard to do alt+hjkl window resizing
 ---
 
 rust-analyzer's autocomplete doesn't work in a single .rs file.
+
+---
+
+remap caps lock to ctrl for physical keyboard:
+
+https://github.com/ris58h/exkeymo-web
