@@ -5,6 +5,7 @@ SETUVAR --export TERM:tmux\x2d256color
 SETUVAR --export --path TMUX_MANAGER_PLUGIN_PATH:/home/zj/\x2etmux/plugins/
 SETUVAR --export --path TMUX_PLUGIN_MANAGER_PATH:/home/zj/\x2etmux/plugins/
 SETUVAR --export VENV_HOME:/home/zj/\x2evirtualenvs
+SETUVAR --export VISUAL:nvim
 SETUVAR __fish_initialized:3100
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:\x7e/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e\x7e/\x2econfig/fish/functions/nvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e\x7e/\x2econfig/fish/completions/nvm\x2efish
