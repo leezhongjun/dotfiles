@@ -681,6 +681,15 @@ require("lazy").setup({
 		},
 	},
 
+	{
+		"ellisonleao/glow.nvim",
+		config = true,
+		opts = {
+			style = "dark",
+		},
+		cmd = "Glow",
+	},
+
 	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
 	--    This is the easiest way to modularize your config.
 	--
