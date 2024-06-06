@@ -1,5 +1,7 @@
 commands for one-time setup:
 ```
+git config --global user.email "80515759+zj-0@users.noreply.github.com"
+git config --global user.name "zj"
 set -Ux EDITOR nvim
 fish_vi_key_bindings
 chsh -s fish
@@ -14,16 +16,17 @@ tmux plugins:
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 set -Ux TMUX_MANAGER_PLUGIN_PATH ~/.tmux/plugins/tpm
+./.tmux/plugins/tpm/tpm
 tmux source ~/.tmux.conf
 ```
 then press ctrl+b I to install plugins
 
 packages:
 ```
-pkg install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger timg starship mdbook binutils ninja llvmgold tur-repo pandoc
+pkg install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger timg starship mdbook binutils ninja llvmgold tur-repo pandoc termux-tools termux-api fzf
 
 # languages
-pkg install nodejs stylua luarocks lua-language-server golang gopls rust-analyzer rust python3.7
+pkg install nodejs stylua luarocks lua-language-server golang gopls rust-analyzer rust python3.7 lua51
 
 # glow (for markdown rendering)
 go install github.com/charmbracelet/glow@latest
