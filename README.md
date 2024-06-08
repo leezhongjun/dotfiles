@@ -15,7 +15,7 @@ packages:
 sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
-sudo apt install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang clangd unzip ranger pandoc
+sudo apt install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang clangd unzip ranger pandoc clang-format
 
 # starship prompt
 curl -sS https://starship.rs/install.sh | sh
