@@ -8,7 +8,7 @@ end
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Set Opts ]]
 vim.opt.number = true
@@ -55,11 +55,6 @@ vim.opt.scrolloff = 8
 -- [[ Basic Keymaps ]]
 -- Use <leader>p to paste over something without overwriting the buffer
 vim.keymap.set("x", "<leader>p", '"_dP')
-
--- Clear ^M Windows endline characters when pasting (in WSL)
-vim.keymap.set("n", ",m", function()
-	vim.cmd(":%s/\r//g")
-end)
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
@@ -160,13 +155,6 @@ else
 
 		-- "gc" to comment visual regions/lines
 		{ "numToStr/Comment.nvim", opts = {} },
-
-		-- "tmux.nvim" for seamless navigation and resizing
-		{
-			"aserowy/tmux.nvim",
-			config = true,
-			opts = { copy_sync = { redirect_to_clipboard = true } },
-		},
 
 		-- copilot
 		{
