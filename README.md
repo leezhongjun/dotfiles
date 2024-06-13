@@ -1,9 +1,12 @@
+others:
+https://rpmfusion.org/Howto/Multimedia?highlight=%28%5CbCategoryHowto%5Cb%29
+
 packages:
 ```
 sudo dnf copr enable yorickpeterse/lua-language-server
 chsh -s $(which fish)
 sudo dnf upgrade
-sudo dnf install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger pandoc clang-tools-extra go python3-pip luarocks lua-language-server fzf
+sudo dnf install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger pandoc clang-tools-extra go python3-pip luarocks lua-language-server fzf rofi vlc
 
 git config --global user.email "80515759+zj-0@users.noreply.github.com"
 git config --global user.name "zj"
