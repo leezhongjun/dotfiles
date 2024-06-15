@@ -11,6 +11,7 @@ sudo dnf install jq cmake which fish tmux neovim yadm gh git wget ripgrep make c
 git config --global user.email "80515759+zj-0@users.noreply.github.com"
 git config --global user.name "zj"
 
+chmod +x .config/i3/rofi-power-menu
 
 # starship prompt
 curl -sS https://starship.rs/install.sh | sh

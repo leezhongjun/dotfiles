@@ -57,8 +57,12 @@ bindsym $mod+backslash exec firefox
 # start stremio
 bindsym $mod+equal exec stremio
 
-# start ranger
-bindsym $mod+BackSpace exec thunar
+# start whatsapp
+bindsym $mod+BackSpace exec surf https://web.whatsapp.com/
+
+# start thunar (file manager)
+# code 43 is the key ']'
+bindcode $mod+35 exec thunar
 
 # kill focused window
 bindsym $mod+q kill
@@ -167,6 +171,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+# open rofi power-menu
+bindsym $mod+Shift+w exec rofi -show power-menu -modi power-menu:~/.config/i3/rofi-power-menu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
