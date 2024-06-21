@@ -1,12 +1,41 @@
 others:
 https://rpmfusion.org/Howto/Multimedia?highlight=%28%5CbCategoryHowto%5Cb%29
 
+neovim terminal setup:
+in /usr/share/applications/nvim.desktop and ~/.local/share/applications/nvim.desktop:
+```
+[Desktop Entry]
+Name=Neovim
+Exec=kitty -e nvim %F
+Terminal=false
+Type=Application
+Keywords=Text;editor;
+Icon=nvim
+Categories=Utility;TextEditor;
+StartupNotify=false
+```
+
+nvidia-settings:
+```
+sudo nvidia-settings
+# then enable full composition pipeline and correct refresh rate
+```
+
+i3-restore:
+https://github.com/jdholtz/i3-restore
+cp utils/ and programs/ too
+
 packages:
 ```
 sudo dnf copr enable yorickpeterse/lua-language-server
 chsh -s $(which fish)
 sudo dnf upgrade
-sudo dnf install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger pandoc clang-tools-extra go python3-pip luarocks lua-language-server fzf rofi vlc xset syncthing mupdf
+sudo dnf install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger pandoc clang-tools-extra go python3-pip luarocks lua-language-server fzf rofi vlc xset syncthing mupdf xdotool kernel-tools
+
+sudo systemctl stop pcscd
+sudo systemctl stop pcscd.socket
+sudo systemctl disable pcscd
+sudo systemctl disable pcscd.socket
 
 git config --global user.email "80515759+zj-0@users.noreply.github.com"
 git config --global user.name "zj"
@@ -47,7 +76,12 @@ https://github.com/alexandru-balan/Stremio-Install-Scripts
 
 put in startup (depending on graphics card):
 ```
-xrandr --output HDMI-0 --gamma 1.0:0.902:0.814
+xrandr --output HDMI-0 --gamma 1.0:0.869:0.737
+
+# or in ~/.nvidia-settings-rc
+# [DPY:HDMI-0]/RedGamma=1.000000
+# [DPY:HDMI-0]/GreenGamma=0.868607
+# [DPY:HDMI-0]/BlueGamma=0.736888
 ```
 
 background:

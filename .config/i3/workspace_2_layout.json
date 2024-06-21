@@ -1,0 +1,23 @@
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1036,
+       "width": 1916,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "~",
+    "percent": 1,
+    "swallows": [
+       {
+       "class": "^kitty$",
+       "instance": "^kitty$",
+       "machine": "^fedora$",
+       "title": "^\\~$"
+       }
+    ],
+    "type": "con"
+}

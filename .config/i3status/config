@@ -13,7 +13,7 @@ general {
 }
 
 # order += "wireless _first_"
-order += "ethernet _first_"
+# order += "ethernet _first_"
 # order += "battery all"
 order += "cpu_usage"
 order += "memory"
@@ -25,10 +25,10 @@ order += "tztime local"
 #         format_down = "W: down"
 # }
 
-ethernet _first_ {
-        format_up = "E: %ip"
-        format_down = "E: down"
-}
+# ethernet _first_ {
+#         format_up = "E: %ip"
+#         format_down = "E: down"
+# }
 
 # battery all {
 #        format = "%status %percentage %remaining"
@@ -43,14 +43,14 @@ load {
 }
 
 memory {
-        format = "%used | %available"
+        format = "%used"
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
 }
 
 volume master {
-        format = "<span color='turquoise'>♪: %volume</span>"
-        format_muted = "♪: muted (%volume)"
+        format = "<span color='turquoise'>%volume</span>"
+        format_muted = "x(%volume)"
         device = "default"
         mixer = "Master"
         mixer_idx = 0

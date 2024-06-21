@@ -1,0 +1,24 @@
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 600,
+       "width": 800,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "@cgDIS:T | WhatsApp",
+    "percent": 1,
+    "swallows": [
+       {
+       "class": "^Surf$",
+       "instance": "^surf$",
+       "machine": "^fedora$",
+       "title": "^\\@cgDIS\\:T\\ \\|\\ WhatsApp$",
+       "window_role": "^Surf\\[10\\]$"
+       }
+    ],
+    "type": "con"
+}
