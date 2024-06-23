@@ -10,13 +10,38 @@
     },
     "marks": [],
     "name": "@cgDIS:T | WhatsApp",
-    "percent": 1,
+    "percent": 0.5,
     "swallows": [
        {
        "class": "^Surf$",
        "instance": "^surf$",
        "machine": "^fedora$",
        "title": "^\\@cgDIS\\:T\\ \\|\\ WhatsApp$",
+       "window_role": "^Surf\\[10\\]$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 600,
+       "width": 800,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "@cgDIS:T | Inbox (1) - leezhongjun0@gmail.com - Gmail",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^Surf$",
+       "instance": "^surf$",
+       "machine": "^fedora$",
+       "title": "^\\@cgDIS\\:T\\ \\|\\ Inbox\\ \\(1\\)\\ \\-\\ leezhongjun0\\@gmail\\.com\\ \\-\\ Gmail$",
        "window_role": "^Surf\\[10\\]$"
        }
     ],

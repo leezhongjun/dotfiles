@@ -1,9 +1,10 @@
 --  kickstart.nvim
 
 -- Inlay hints
-if _G.ih == nil then
-	_G.ih = true
-end
+-- Off by default
+-- if _G.ih == nil then
+-- 	_G.ih = true
+-- end
 
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = " "

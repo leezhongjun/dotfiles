@@ -60,7 +60,10 @@ bindsym $mod+equal exec stremio
 # start whatsapp
 bindsym $mod+BackSpace exec surf https://web.whatsapp.com/
 
-# start thunar (file manager)
+# start whatsapp
+bindsym $mod+m exec surf https://mail.google.com/mail/u/0/
+
+# strt thunar (file manager)
 # code 43 is the key ']'
 bindcode $mod+35 exec thunar
 
@@ -118,7 +121,7 @@ bindsym $mod+v split h
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+a layout stacking
+bindsym $mod+t layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -129,10 +132,10 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-#bindsym $mod+a focus parent
+bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+c focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.

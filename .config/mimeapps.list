@@ -7,6 +7,7 @@ application/x-mobipocket-ebook=mupdf-gl.desktop;mupdf.desktop;
 application/zip=userapp-tar -xf-FV9ZP2.desktop;
 application/x-xz-compressed-tar=thunar.desktop;gnome-disk-image-mounter.desktop;
 application/pdf=mupdf.desktop;
+text/plain=nvim.desktop;
 
 [Default Applications]
 application/x-zerosize=nvim.desktop
@@ -14,3 +15,4 @@ application/epub+zip=mupdf.desktop
 application/x-mobipocket-ebook=mupdf.desktop
 application/zip=userapp-tar -xf-FV9ZP2.desktop
 application/x-xz-compressed-tar=gnome-disk-image-mounter.desktop
+text/plain=nvim.desktop

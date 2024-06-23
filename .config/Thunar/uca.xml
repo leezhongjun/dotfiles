@@ -12,4 +12,19 @@
 	<startup-notify/>
 	<directories/>
 </action>
+<action>
+	<icon></icon>
+	<name>Create Symlink</name>
+	<submenu></submenu>
+	<unique-id>1719031763175980-1</unique-id>
+	<command>ln -s %f %n-link</command>
+	<description>Create symlink in current directory</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
 </actions>
