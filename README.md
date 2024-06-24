@@ -23,6 +23,10 @@ Section "InputClass"
 EndSection
 ```
 
+in /etc/X11/xorg.conf/30-touchpad.conf
+```
+```
+
 nvidia-settings:
 ```
 sudo nvidia-settings
