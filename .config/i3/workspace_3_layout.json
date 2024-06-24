@@ -3,20 +3,23 @@
     "current_border_width": 2,
     "floating": "auto_off",
     "geometry": {
-       "height": 864,
-       "width": 1536,
+       "height": 1036,
+       "width": 1916,
        "x": 0,
        "y": 0
     },
-    "marks": [],
-    "name": "Stremio - Freedom to Stream",
+    "marks": [
+       "_i3_restore_focus"
+    ],
+    "name": "Mozilla Firefox",
     "percent": 1,
     "swallows": [
        {
-       "class": "^Stremio$",
-       "instance": "^stremio$",
+       "class": "^org\\.mozilla\\.firefox$",
+       "instance": "^Navigator$",
        "machine": "^fedora$",
-       "title": "^Stremio\\ \\-\\ Freedom\\ to\\ Stream$"
+       "title": "^Mozilla\\ Firefox$",
+       "window_role": "^browser$"
        }
     ],
     "type": "con"

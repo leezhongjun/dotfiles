@@ -2,7 +2,7 @@
 video/x-matroska=mpv.desktop;vlc.desktop;
 text/markdown=nvim.desktop;
 application/x-zerosize=nvim.desktop;
-application/epub+zip=mupdf.desktop;
+application/epub+zip=nvim.desktop;mupdf.desktop;
 application/x-mobipocket-ebook=mupdf-gl.desktop;mupdf.desktop;
 application/zip=userapp-tar -xf-FV9ZP2.desktop;
 application/x-xz-compressed-tar=thunar.desktop;gnome-disk-image-mounter.desktop;
