@@ -1,0 +1,9 @@
+/*
+!/.config
+!.tmux.conf
+!.gitignore
+!README.md
+!.gitconfig
+.config/gh/hosts.yml
+.config/github-copilot/hosts.json
+.config/wslu/
