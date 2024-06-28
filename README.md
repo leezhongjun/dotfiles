@@ -21,7 +21,6 @@ cp utils/ and programs/ too
 
 packages:
 ```
-swaymsg input type:keyboard xkb_options caps:swapescape
 # Fedora 40 https://software.opensuse.org//download.html?project=home%3ATheLocehiliosan%3Ayadm&package=yadm
 dnf config-manager --add-repo https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_40/home:TheLocehiliosan:yadm.repo
 

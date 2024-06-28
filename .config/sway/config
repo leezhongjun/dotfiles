@@ -234,7 +234,7 @@ bindsym --whole-window --border $mod+button4 workspace prev
 bindsym --whole-window --border $mod+button5  workspace next
 
 # open rofi power-menu
-bindsym $mod+p exec rofi -show power-menu -modi power-menu:~/.config/i3/rofi-power-menu
+bindsym $mod+p exec rofi -show power-menu -modi power-menu:~/.config/sway/rofi-power-menu
 
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d
