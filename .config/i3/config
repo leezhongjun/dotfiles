@@ -68,17 +68,11 @@ bindsym $mod+n exec qutebrowser --target=window https://web.whatsapp.com/
 bindsym $mod+m exec qutebrowser --target=window https://mail.google.com/mail/u/0/
 
 # open qutebrowser
-bindsym $mod+BackSpace exec qutebrowser
+bindsym $mod+BackSpace exec qutebrowser --restore=wm
 
 # strt thunar (file manager)
 # code 43 is the key ']'
 bindcode $mod+35 exec thunar
-
-# save all workspaces
-bindsym $mod+z exec i3-save
-
-# restore all workspace (only when all workspaces are empty)
-bindsym $mod+x exec i3-restore
 
 # kill focused window
 bindsym $mod+q kill
