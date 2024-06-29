@@ -62,10 +62,10 @@ bindsym $mod+backslash exec firefox
 bindsym $mod+equal exec stremio
 
 # start whatsapp
-bindsym $mod+BackSpace exec surf https://web.whatsapp.com/
+bindsym $mod+BackSpace exec qutebrowser --target=window https://web.whatsapp.com/
 
 # start whatsapp
-bindsym $mod+m exec surf https://mail.google.com/mail/u/0/
+bindsym $mod+m exec qutebrowser --target=window https://mail.google.com/mail/u/0/
 
 # strt thunar (file manager)
 # code 43 is the key ']'
