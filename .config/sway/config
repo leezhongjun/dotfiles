@@ -80,10 +80,13 @@ output * bg #808080 solid_color
     bindsym $mod+equal exec stremio
 
     # start whatsapp
-    bindsym $mod+BackSpace exec surf https://web.whatsapp.com/
+    bindsym $mod+n exec qutebrowser https://web.whatsapp.com/ --target=window
 
-    # start whatsapp
-    bindsym $mod+m exec surf https://mail.google.com/mail/u/0/
+    # start gmail
+    bindsym $mod+m exec qutebrowser https://mail.google.com/mail/u/0/ --target=window
+
+    # start qutebrowser
+    bindsym $mod+BackSpace exec qutebrowser
 
     # start thunar (file manager)
     # code 43 is the key ']'
@@ -97,6 +100,10 @@ output * bg #808080 solid_color
 
     # Switch to windows in any workspace
     bindsym $mod+g exec "rofi -modi window,run -show window"
+
+    # Save and restore sessions
+    bindsym $mod+z exec sway-session save
+    bindsym $mod+x exec sway-session restore
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
