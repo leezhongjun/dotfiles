@@ -48,7 +48,7 @@ dnf config-manager --add-repo https://download.opensuse.org/repositories/home:Th
 
 sudo dnf copr enable yorickpeterse/lua-language-server
 sudo dnf upgrade
-sudo dnf install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger pandoc clang-tools-extra go python3-pip luarocks lua-language-server fzf rofi vlc xset syncthing mupdf xdotool kernel-tools xarchiver thunar-archive-plugin libasan valgrind qutebrowser st flatpak
+sudo dnf install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger pandoc clang-tools-extra go python3-pip luarocks lua-language-server fzf rofi vlc xset syncthing mupdf xdotool kernel-tools xarchiver thunar-archive-plugin libasan valgrind qutebrowser st flatpak python-pillow
 chsh -s $(which fish)
 
 sudo dnf debuginfo-install gdb glibc
