@@ -23,9 +23,12 @@ Section "InputClass"
 EndSection
 ```
 
-in /etc/X11/xorg.conf/30-touchpad.conf
-```
-```
+firefox:
+1. type about:config in the address bar.
+2. in the search bar type gfx.webrender.all and set it to true.
+3. in the search bar type media.ffmpeg.vaapi.enabled and set it to true.
+4. in the search bar type toolkit.tabbox.switchByScrolling and set it to true.
+
 
 nvidia-settings:
 ```
