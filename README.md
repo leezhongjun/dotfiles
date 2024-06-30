@@ -19,7 +19,7 @@ in /etc/X11/xorg.conf.d/00-keyboard.conf
 ```
 Section "InputClass"
         MatchIsKeyboard "on"
-        Option "XkbOptions" "caps:escape"
+        Option "XkbOptions" "caps:swapescape,altwin:swap_alt_win"
 EndSection
 ```
 
@@ -42,6 +42,8 @@ cp utils/ and programs/ too
 
 packages:
 ```
+setxkbmap -option altwin:swap_alt_win
+
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 # Fedora 40 https://software.opensuse.org//download.html?project=home%3ATheLocehiliosan%3Ayadm&package=yadm
 dnf config-manager --add-repo https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_40/home:TheLocehiliosan:yadm.repo
