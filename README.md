@@ -19,7 +19,7 @@ in /etc/X11/xorg.conf.d/00-keyboard.conf
 ```
 Section "InputClass"
         MatchIsKeyboard "on"
-        Option "XkbOptions" "caps:swapescape,altwin:swap_alt_win"
+        Option "XkbOptions" "caps:swapescape"
 EndSection
 ```
 
