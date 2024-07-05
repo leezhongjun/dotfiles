@@ -57,5 +57,5 @@ volume master {
 }
 
 tztime local {
-        format = "%a %-d-%-m-%Y <span color='yellow'>%I:%M:%S %p</span>"
+        format = "%a %-d-%-m-%y <span color='yellow'>%I:%M:%S %p</span>"
 }
