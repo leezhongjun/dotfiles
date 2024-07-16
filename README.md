@@ -36,10 +36,6 @@ sudo nvidia-settings
 # then enable full composition pipeline and correct refresh rate
 ```
 
-i3-restore:
-https://github.com/jdholtz/i3-restore
-cp utils/ and programs/ too
-
 packages:
 ```
 setxkbmap -option altwin:swap_alt_win
@@ -118,18 +114,5 @@ in `/etc/lightdm/lightdm-gtk-greeter.conf`
 background=#808080
 ```
 
-
 other notes:
-ctrl+b then I to install plugins from tmux
-ctrl+v to paste, ctrl+x to copy from android clipboard in fish
 ctrl+e to interrupt
-ctrl+c to switch to normal mode in fish shell
-ctrl+e to remove suggestions in nvim
-must use physical keyboard to do alt+hjkl window resizing
-
----
-
-rust-analyzer's autocomplete doesn't work in a single .rs file.
-
----
-

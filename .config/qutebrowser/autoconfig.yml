@@ -9,6 +9,9 @@ settings:
   auto_save.session:
     global: false
   content.notifications.enabled:
+    https://app.tuta.com: true
     https://web.whatsapp.com: true
   content.register_protocol_handler:
+    https://app.tuta.com#url=%25s: true
     https://mail.google.com?extsrc=mailto&url=%25s: true
+    https://mail.tutanota.com#url=%25s: true
