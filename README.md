@@ -1,7 +1,7 @@
-others:
-https://rpmfusion.org/Howto/Multimedia?highlight=%28%5CbCategoryHowto%5Cb%29
+Others:
+(https://rpmfusion.org/Howto/Multimedia?highlight=%28%5CbCategoryHowto%5Cb%29)
 
-neovim terminal setup:
+Neovim setup:
 in /usr/share/applications/nvim.desktop and ~/.local/share/applications/nvim.desktop:
 ```
 [Desktop Entry]
@@ -15,7 +15,7 @@ Categories=Utility;TextEditor;
 StartupNotify=false
 ```
 
-in /etc/X11/xorg.conf.d/00-keyboard.conf
+In `/etc/X11/xorg.conf.d/00-keyboard.conf`:
 ```
 Section "InputClass"
         MatchIsKeyboard "on"
@@ -23,23 +23,21 @@ Section "InputClass"
 EndSection
 ```
 
-firefox:
+Firefox:
 1. type about:config in the address bar.
 2. in the search bar type gfx.webrender.all and set it to true.
 3. in the search bar type media.ffmpeg.vaapi.enabled and set it to true.
 4. in the search bar type toolkit.tabbox.switchByScrolling and set it to true.
 
 
-nvidia-settings:
+Nvidia-settings:
 ```
 sudo nvidia-settings
 # then enable full composition pipeline and correct refresh rate
 ```
 
-packages:
+Packages:
 ```
-setxkbmap -option altwin:swap_alt_win
-
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 # Fedora 40 https://software.opensuse.org//download.html?project=home%3ATheLocehiliosan%3Ayadm&package=yadm
 dnf config-manager --add-repo https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_40/home:TheLocehiliosan:yadm.repo
@@ -85,17 +83,17 @@ pip install autopep8 pyright pygments
 sudo npm install -g markdown-toc
 ```
 
-copilot:
+Copilot:
 ```
 gh extensions install github/gh-copilot
 ```
 
-stremio:
+Stremio:
 ```
 https://github.com/alexandru-balan/Stremio-Install-Scripts
 ```
 
-put in startup (depending on graphics card):
+In startup (`~/.config/i3/config`) (depending on graphics card):
 ```
 xrandr --output HDMI-0 --gamma 1.0:0.869:0.737
 
@@ -105,14 +103,11 @@ xrandr --output HDMI-0 --gamma 1.0:0.869:0.737
 # [DPY:HDMI-0]/BlueGamma=0.736888
 ```
 
-background:
-
-in `/etc/lightdm/lightdm-gtk-greeter.conf`
-
+In `/etc/lightdm/lightdm-gtk-greeter.conf` (background color):
 ```
 [greeter]
 background=#808080
 ```
 
-other notes:
+Other notes:
 ctrl+e to interrupt
