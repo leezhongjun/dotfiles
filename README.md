@@ -32,32 +32,34 @@ Firefox:
 
 Nvidia-settings:
 ```
+sudo dnf install akmod-nvidia # rhel/centos users can use kmod-nvidia instead
+sudo dnf install xorg-x11-drv-nvidia-cuda #optional for cuda/nvdec/nvenc support
+
 sudo nvidia-settings
 # then enable full composition pipeline and correct refresh rate
 ```
 
 Packages:
 ```
-sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 # Fedora 40 https://software.opensuse.org//download.html?project=home%3ATheLocehiliosan%3Ayadm&package=yadm
-dnf config-manager --add-repo https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_40/home:TheLocehiliosan:yadm.repo
+dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_40/home:TheLocehiliosan:yadm.repo
 
-sudo dnf copr enable yorickpeterse/lua-language-server
-sudo dnf upgrade
-sudo dnf install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger pandoc clang-tools-extra go python3-pip luarocks lua-language-server fzf rofi vlc xset syncthing mupdf xdotool kernel-tools xarchiver thunar-archive-plugin libasan valgrind qutebrowser st flatpak python-pillow
+sudo dnf copr enable yorickpeterse/lua-language-server -y
+sudo dnf upgrade -y
+sudo dnf install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger pandoc clang-tools-extra go python3-pip luarocks lua-language-server fzf rofi vlc xset syncthing mupdf xdotool kernel-tools xarchiver thunar-archive-plugin libasan valgrind qutebrowser st flatpak python-pillow -y
 chsh -s $(which fish)
 
 sudo dnf debuginfo-install gdb glibc
 
 sudo systemctl stop pcscd
 sudo systemctl stop pcscd.socket
-sudo systemctl disable pcscd
-sudo systemctl disable pcscd.socket
+
 
 sudo dnf remove mousepad azote
 
 git config --global user.email "80515759+zj-0@users.noreply.github.com"
-git config --global user.name "zj"
+git config --global user.name "henrlly"
 
 chmod +x .config/i3/rofi-power-menu
 
@@ -78,6 +80,9 @@ cargo install stylua mdbook
 
 # pygements, pyright and autopep8
 pip install autopep8 pyright pygments
+
+# kitty
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 # markdown-toc
 sudo npm install -g markdown-toc

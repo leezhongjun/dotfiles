@@ -5,5 +5,5 @@
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
 [user]
-	name = zj
+	name = henrlly
 	email = 80515759+zj-0@users.noreply.github.com

@@ -1,18 +1,19 @@
 [Added Associations]
 video/x-matroska=mpv.desktop;vlc.desktop;
-text/markdown=nvim.desktop;
-application/x-zerosize=nvim.desktop;
+text/markdown=nvim.desktop;xfce4-terminal.desktop;
+application/x-zerosize=userapp-cat-MGBNW2.desktop;nvim.desktop;xfce4-terminal-settings.desktop;
 application/epub+zip=nvim.desktop;mupdf.desktop;
 application/x-mobipocket-ebook=mupdf-gl.desktop;mupdf.desktop;
 application/zip=userapp-tar -xf-FV9ZP2.desktop;
 application/x-xz-compressed-tar=thunar.desktop;gnome-disk-image-mounter.desktop;
 application/pdf=mupdf.desktop;
-text/plain=nvim.desktop;
+text/plain=userapp-nvim-4H3XW2.desktop;userapp-cat-MGBNW2.desktop;nvim.desktop;gcr-viewer.desktop;
 
 [Default Applications]
-application/x-zerosize=nvim.desktop
+application/x-zerosize=xfce4-terminal-settings.desktop
 application/epub+zip=mupdf.desktop
 application/x-mobipocket-ebook=mupdf.desktop
 application/zip=userapp-tar -xf-FV9ZP2.desktop
 application/x-xz-compressed-tar=gnome-disk-image-mounter.desktop
-text/plain=nvim.desktop
+text/plain=gcr-viewer.desktop
+text/markdown=xfce4-terminal.desktop
