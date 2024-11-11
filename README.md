@@ -3,7 +3,7 @@
 **Note: This is pretty old and outdated**
 
 Included in config:
- - i3
+ - sway
  - kitty
  - nvim
  - fish
