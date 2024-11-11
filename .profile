@@ -19,3 +19,4 @@ cd ~/competitive-programming/_USACO
 export EDITOR=vim
 export VISUAL=vim
 alias v=vim
+alias c=clear
