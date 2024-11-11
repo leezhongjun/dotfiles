@@ -2,38 +2,48 @@
 
 ***Note: This is pretty old and outdated**
 
-others:
-https://rpmfusion.org/Howto/Multimedia?highlight=%28%5CbCategoryHowto%5Cb%29
+Included in config:
+ - i3
+ - kitty
+ - nvim
+ - fish
+ - starship
+ - ranger
+ - tokyonight theme
 
-neovim terminal setup:
-in /usr/share/applications/nvim.desktop and ~/.local/share/applications/nvim.desktop:
+This works on my laptop:
+
+*ASUS Vivobook S15 M533IA*
+
+### Instructions
+
+#### Packages
 ```
-[Desktop Entry]
-Name=Neovim
-Exec=kitty -e nvim %F
-Terminal=false
-Type=Application
-Keywords=Text;editor;
-Icon=nvim
-Categories=Utility;TextEditor;
-StartupNotify=false
-```
+# Add rpmfusion
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 
+# Add yadm repo
+dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_40/home:TheLocehiliosan:yadm.repo
 
-packages:
-```
-# Fedora 40 https://software.opensuse.org//download.html?project=home%3ATheLocehiliosan%3Ayadm&package=yadm
-dnf config-manager --add-repo https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_40/home:TheLocehiliosan:yadm.repo
+# Lua LS
+sudo dnf copr enable yorickpeterse/lua-language-server -y
 
-sudo dnf copr enable yorickpeterse/lua-language-server
-sudo dnf upgrade
+sudo dnf upgrade -y
+
+# Configure multimedia - https://rpmfusion.org/Howto/Multimedia?highlight=%28%5CbCategoryHowto%5Cb%29
+# Switch to full ffmpeg
+sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+# Install additional codecs
+sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+
 sudo dnf install -y jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger pandoc clang-tools-extra go python3-pip luarocks lua-language-server fzf vlc syncthing mupdf kernel-tools xarchiver thunar-archive-plugin libasan valgrind surf flatpak
+
 chsh -s $(which fish)
 
 sudo dnf debuginfo-install gdb glibc
 
-git config --global user.email "80515759+zj-0@users.noreply.github.com"
-git config --global user.name "zj"
+git config --global user.email "80515759+henrlly@users.noreply.github.com"
+git config --global user.name "Henry Lee"
 
 chmod +x .config/sway/rofi-power-menu
 
@@ -57,39 +67,45 @@ pip install autopep8 pyright pygments
 
 # markdown-toc
 sudo npm install -g markdown-toc
+
+# kitty
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 ```
 
-copilot:
+#### Additonal Neovim settings
+Add to `/usr/share/applications/nvim.desktop` and `~/.local/share/applications/nvim.desktop`
+```
+[Desktop Entry]
+Name=Neovim
+Exec=kitty -e nvim %F
+Terminal=false
+Type=Application
+Keywords=Text;editor;
+Icon=nvim
+Categories=Utility;TextEditor;
+StartupNotify=false
+```
+
+#### Github Copilot CLI
 ```
 gh extensions install github/gh-copilot
 ```
 
-stremio:
+#### Stremio
 ```
 https://github.com/alexandru-balan/Stremio-Install-Scripts
 ```
 
-put in startup (depending on graphics card):
+#### Night light
+Add to startup
 ```
 xrandr --output HDMI-0 --gamma 1.0:0.869:0.737
-
-# or in ~/.nvidia-settings-rc
-# [DPY:HDMI-0]/RedGamma=1.000000
-# [DPY:HDMI-0]/GreenGamma=0.868607
-# [DPY:HDMI-0]/BlueGamma=0.736888
 ```
 
-other notes:
-ctrl+b then I to install plugins from tmux
-ctrl+v to paste, ctrl+x to copy from android clipboard in fish
-ctrl+e to interrupt
-ctrl+c to switch to normal mode in fish shell
-ctrl+e to remove suggestions in nvim
-must use physical keyboard to do alt+hjkl window resizing
+#### Other notes:
 
----
-
-rust-analyzer's autocomplete doesn't work in a single .rs file.
-
----
+ - `ctrl+e` to interrupt
+ - `ctrl+c` to switch to normal mode in fish shell
+ - `ctrl+e` to remove suggestions in nvim
+ - rust-analyzer's autocomplete doesn't work in a single .rs file.
 
