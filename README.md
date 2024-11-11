@@ -1,4 +1,19 @@
-commands for one-time-setup:
+## Dotfiles for ubuntu wsl
+
+**Note: this is pretty old and outdated**
+
+Included in config:
+ - tmux
+ - nvim
+ - fish
+ - starship
+ - ranger
+ - termux settings
+ - tokyonight theme
+
+### Instructions
+
+#### Commands for one-time-setup
 ```
 set -Ux EDITOR nvim
 fish_vi_key_bindings
@@ -10,7 +25,7 @@ fish_add_path ~/.cargo/bin/
 set -gx TERM tmux-256color
 ```
 
-packages:
+#### Packages
 ```
 sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:neovim-ppa/unstable
@@ -22,21 +37,15 @@ curl -sS https://starship.rs/install.sh | sh
 
 # glow (for markdown rendering)
 go install github.com/charmbracelet/glow@latest
-```
 
-fisher:
-```
+# fisher
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-```
 
-brew:
-```
+# brew
 sudo curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | /bin/bash
 fish_add_path /home/linuxbrew/.linuxbrew/bin/
-```
 
-languages:
-```
+# languages
 sudo apt install gopls luarocks python3-venv python-is-python3 python3-pip
 
 # rustup
@@ -62,7 +71,7 @@ pip install autopep8 pyright pygments
 npm install -g markdown-toc
 ```
 
-tmux plugins:
+#### tmux plugins:
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 set -Ux TMUX_MANAGER_PLUGIN_PATH ~/.tmux/plugins/tpm
@@ -70,28 +79,23 @@ tmux source ~/.tmux.conf
 # ctrl+b then I to install plugins from tmux
 ```
 
-copilot:
+#### Github Copilot CLI
 ```
 gh extensions install github/gh-copilot
 ```
 
-other notes:
-ctrl+b then I to install plugins from tmux
-ctrl+v to paste, ctrl+x to copy from android clipboard in fish
-ctrl+e to interrupt
-ctrl+c to switch to normal mode in fish shell
-ctrl+e to remove suggestions in nvim
-must use physical keyboard to do alt+hjkl window resizing
+#### Other notes:
 
----
+ - `ctrl+v` to paste, `ctrl+x` to copy from android clipboard in fish
+ - `ctrl+e` to interrupt
+ - `ctrl+c` to switch to normal mode in fish shell
+ - `ctrl+e` to remove suggestions in nvim
+ - rust-analyzer's autocomplete doesn't work in a single .rs file.
 
-rust-analyzer's autocomplete doesn't work in a single .rs file.
-
----
-
-remap caps lock to esc:
+#### Swap caps lock and esc for keyboard (windows)
 
 https://renenyffenegger.ch/notes/Windows/registry/tree/HKEY_LOCAL_MACHINE/System/CurrentControlSet/Control/Keyboard-Layout/index
+
 ```
 $s_ESC  = 0x01, 0x00
 $s_CAPS = 0x3a, 0x00
@@ -111,20 +115,20 @@ $mapping = [byte[]] (
 $null = new-itemProperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\Keyboard Layout" -name "Scancode Map" -value $mapping -force
 ```
 
-wsl:
+#### For wsl
 ```
 sudo apt install wslu
 ```
 
-wsl dns error fix:
+#### wsl dns error fix
 
 https://askubuntu.com/a/1353199
 
-alacritty:
+#### For alacritty
 
 https://github.com/alacritty/alacritty/issues/1663#issuecomment-1917418514
 
-`alacritty.toml`:
+In `alacritty.toml`:
 ```
 ### SETTINGS ###
 [shell]
@@ -182,7 +186,8 @@ cyan    = '#0db9d7'
 white   = '#acb0d0'
 ```
 
-wezterm (`wezterm.lua`):
+#### For wezterm
+In `wezterm.lua`:
 ```
 local wezterm = require 'wezterm'
 local mux = wezterm.mux
