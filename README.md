@@ -1,3 +1,7 @@
+## Dotfiles for fedora sway
+
+***Note: This is pretty old and outdated**
+
 others:
 https://rpmfusion.org/Howto/Multimedia?highlight=%28%5CbCategoryHowto%5Cb%29
 
@@ -15,9 +19,6 @@ Categories=Utility;TextEditor;
 StartupNotify=false
 ```
 
-i3-restore:
-https://github.com/jdholtz/i3-restore
-cp utils/ and programs/ too
 
 packages:
 ```
