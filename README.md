@@ -70,7 +70,7 @@ pip install autopep8 pyright pygments
 npm install -g markdown-toc
 ```
 
-#### tmux plugins:
+#### tmux plugins
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 set -Ux TMUX_MANAGER_PLUGIN_PATH ~/.tmux/plugins/tpm
