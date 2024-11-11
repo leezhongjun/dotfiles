@@ -1,11 +1,11 @@
 ## Dotfiles for termux
 
 Included in config:
+ - tmux
  - nvim
  - fish
  - starship
  - ranger
- - tmux
  - termux settings
  - tokyonight theme
 
