@@ -1,0 +1,9 @@
+/*
+!/.config
+!/.vim
+/.vim/undodir/*
+/.vim/.netrwhist
+!.gitignore
+!README.md
+!.profile
+!.vimrc
