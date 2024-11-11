@@ -28,15 +28,6 @@ fish_add_path ~/.cargo/bin/
 fish_add_path "~/bin"
 ```
 
-#### tmux plugins
-```
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-set -Ux TMUX_MANAGER_PLUGIN_PATH ~/.tmux/plugins/tpm
-./.tmux/plugins/tpm/tpm
-tmux source ~/.tmux.conf
-```
-Then press `ctrl+b` then `I` to install plugins
-
 #### Packages
 ```
 pkg install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger timg starship mdbook binutils ninja llvmgold tur-repo pandoc termux-tools termux-api fzf
@@ -50,9 +41,18 @@ go install github.com/charmbracelet/glow@latest
 # markdown-toc
 npm install -g markdown-toc
 
-# pip packages
+# python type checker, formatter, and syntax highlighter
 pip install pyright autopep8 pygments
 ```
+
+#### tmux plugins
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+set -Ux TMUX_MANAGER_PLUGIN_PATH ~/.tmux/plugins/tpm
+./.tmux/plugins/tpm/tpm
+tmux source ~/.tmux.conf
+```
+Then press `ctrl+b` then `I` to install plugins
 
 #### adb patch (For Android 12+, to prevent killing phantom processes):
 ```
