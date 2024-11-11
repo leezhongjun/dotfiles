@@ -1,7 +1,7 @@
 commands for one-time setup:
 ```
-git config --global user.email "80515759+zj-0@users.noreply.github.com"
-git config --global user.name "zj"
+git config --global user.email "80515759+h@users.noreply.github.com"
+git config --global user.name "Henry"
 set -Ux EDITOR nvim
 fish_vi_key_bindings
 chsh -s fish
