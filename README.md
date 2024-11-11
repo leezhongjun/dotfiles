@@ -8,7 +8,6 @@ Included in config:
  - fish
  - starship
  - ranger
- - termux settings
  - tokyonight theme
 
 ### Instructions
