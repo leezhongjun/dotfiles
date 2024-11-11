@@ -1,7 +1,20 @@
-commands for one-time setup:
+### Dotfiles for termux
+
+Included in config:
+ - nvim
+ - fish
+ - starship
+ - ranger
+ - tmux
+ - termux settings
+ - tokyonight theme
+
+### Instructions
+
+#### Commands for one-time setup
 ```
-git config --global user.email "80515759+h@users.noreply.github.com"
-git config --global user.name "Henry"
+git config --global user.email "80515759+henrlly@users.noreply.github.com"
+git config --global user.name "Henry Lee"
 set -Ux EDITOR nvim
 fish_vi_key_bindings
 chsh -s fish
@@ -11,16 +24,16 @@ fish_add_path ~/.cargo/bin/
 fish_add_path "~/bin"
 ```
 
-tmux plugins:
+#### tmux plugins
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 set -Ux TMUX_MANAGER_PLUGIN_PATH ~/.tmux/plugins/tpm
 ./.tmux/plugins/tpm/tpm
 tmux source ~/.tmux.conf
 ```
-then press ctrl+b I to install plugins
+Then press ctrl+b I to install plugins
 
-packages:
+#### Packages
 ```
 pkg install jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger timg starship mdbook binutils ninja llvmgold tur-repo pandoc termux-tools termux-api fzf
 
@@ -37,18 +50,22 @@ npm install -g markdown-toc
 pip install pyright autopep8 pygments
 ```
 
-termux-specific (install from f-droid):
+#### termux-specific (install from f-droid):
 
 termux-api termux-tools termux-styling
  - tokyonight dark
  - source code pro
 
-adb patch (for android 12+, to prevent killing phantom processes):
+#### adb patch (For Android 12+, to prevent killing phantom processes):
 ```
 adb shell "settings put global settings_enable_monitor_phantom_procs false"
 ```
 
-other notes:
+#### Remap caps lock to esc for physical keyboard:
+
+https://github.com/ris58h/exkeymo-web
+
+#### Other notes:
 
 ctrl+b then I to install plugins from tmux
 
@@ -62,12 +79,5 @@ ctrl+e to remove suggestions in nvim
 
 must use physical keyboard to do alt+hjkl window resizing
 
----
-
 rust-analyzer's autocomplete doesn't work in a single .rs file.
 
----
-
-remap caps lock to esc for physical keyboard:
-
-https://github.com/ris58h/exkeymo-web
