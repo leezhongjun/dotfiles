@@ -9,6 +9,11 @@ Included in config:
  - ranger
  - tokyonight theme
 
+This works on my desktop with:
+ - Ryzen 3600
+ - Nvidia 1070
+ - Username: h
+
 ### Instructions
 
 #### Packages
