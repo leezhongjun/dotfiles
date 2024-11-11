@@ -24,6 +24,10 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 # Add yadm repo
 dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:TheLocehiliosan:yadm/Fedora_40/home:TheLocehiliosan:yadm.repo
 
+# Add github desktop package feed (https://github.com/shiftkey/desktop)
+sudo rpm --import https://mirror.mwt.me/shiftkey-desktop/gpgkey
+sudo sh -c 'echo -e "[mwt-packages]\nname=GitHub Desktop\nbaseurl=https://mirror.mwt.me/shiftkey-desktop/rpm\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://mirror.mwt.me/shiftkey-desktop/gpgkey" > /etc/zypp/repos.d/mwt-packages.repo'
+
 # Lua LS
 sudo dnf copr enable yorickpeterse/lua-language-server -y
 
@@ -36,7 +40,12 @@ sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 
 # Install packages
-sudo dnf install conda jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip ranger pandoc clang-tools-extra go python3-pip luarocks lua-language-server fzf rofi vlc xset syncthing mupdf xdotool kernel-tools xarchiver thunar-archive-plugin libasan valgrind qutebrowser st flatpak python-pillow flameshot -y
+sudo dnf install conda jq cmake which fish tmux neovim yadm gh git wget ripgrep make clang unzip pandoc clang-tools-extra go python3-pip luarocks lua-language-server fzf rofi vlc xset syncthing mupdf xdotool kernel-tools xarchiver thunar-archive-plugin libasan valgrind qutebrowser st flatpak python-pillow flameshot github-desktop -y
+
+# Install ranger
+# ranger installed with dnf doesn't work in python 3.13
+# https://github.com/ranger/ranger/issues/3019
+pip install git+https://github.com/ranger/ranger.git
 
 # Change shell to fish
 chsh -s $(which fish)
