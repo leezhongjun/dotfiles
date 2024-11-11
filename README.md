@@ -1,4 +1,4 @@
-### Dotfiles for termux
+## Dotfiles for termux
 
 Included in config:
  - nvim
@@ -10,6 +10,10 @@ Included in config:
  - tokyonight theme
 
 ### Instructions
+
+#### Installing termux
+
+Install termux, termux:api, and termux:styling from f-droid
 
 #### Commands for one-time setup
 ```
@@ -31,7 +35,7 @@ set -Ux TMUX_MANAGER_PLUGIN_PATH ~/.tmux/plugins/tpm
 ./.tmux/plugins/tpm/tpm
 tmux source ~/.tmux.conf
 ```
-Then press ctrl+b I to install plugins
+Then press `ctrl+b` then `I` to install plugins
 
 #### Packages
 ```
@@ -50,12 +54,6 @@ npm install -g markdown-toc
 pip install pyright autopep8 pygments
 ```
 
-#### termux-specific (install from f-droid):
-
-termux-api termux-tools termux-styling
- - tokyonight dark
- - source code pro
-
 #### adb patch (For Android 12+, to prevent killing phantom processes):
 ```
 adb shell "settings put global settings_enable_monitor_phantom_procs false"
@@ -67,17 +65,10 @@ https://github.com/ris58h/exkeymo-web
 
 #### Other notes:
 
-ctrl+b then I to install plugins from tmux
-
-ctrl+v to paste, ctrl+x to copy from android clipboard in fish
-
-ctrl+e to interrupt
-
-ctrl+c to switch to normal mode in fish shell
-
-ctrl+e to remove suggestions in nvim
-
-must use physical keyboard to do alt+hjkl window resizing
-
-rust-analyzer's autocomplete doesn't work in a single .rs file.
+ - `ctrl+v` to paste, `ctrl+x` to copy from android clipboard in fish
+ - `ctrl+e` to interrupt
+ - `ctrl+c` to switch to normal mode in fish shell
+ - `ctrl+e`` to remove suggestions in nvim
+ - Must use physical keyboard to do `alt+hjkl` window resizing
+ - rust-analyzer's autocomplete doesn't work in a single .rs file.
 
