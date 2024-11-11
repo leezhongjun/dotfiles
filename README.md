@@ -38,7 +38,7 @@ pkg install nodejs stylua luarocks lua-language-server golang gopls rust-analyze
 # glow (for markdown rendering)
 go install github.com/charmbracelet/glow@latest
 
-# markdown-toc
+# markdown table of contents
 npm install -g markdown-toc
 
 # python type checker, formatter, and syntax highlighter
