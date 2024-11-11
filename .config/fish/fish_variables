@@ -5,6 +5,7 @@ SETUVAR --export CFLAGS:\x2dWno\x2dnarrowing
 SETUVAR --export EDITOR:nvim
 SETUVAR --export GODEBUG:netdns\x3dcgo
 SETUVAR --export --path PKG_CONFIG_PATH:/data/data/com\x2etermux/files/usr/lib/pkgconfig
+SETUVAR --export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD:1
 SETUVAR --export --path TMUX_MANAGER_PLUGIN_PATH:/data/data/com\x2etermux/files/home/\x2etmux/plugins/tpm
 SETUVAR --export VENV_HOME:/data/data/com\x2etermux/files/home/\x2evirtualenvs
 SETUVAR __fish_initialized:3400

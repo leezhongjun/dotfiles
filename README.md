@@ -11,7 +11,6 @@ fish_add_path ~/.cargo/bin/
 fish_add_path "~/bin"
 ```
 
-
 tmux plugins:
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
@@ -33,10 +32,8 @@ go install github.com/charmbracelet/glow@latest
 
 # markdown-toc
 npm install -g markdown-toc
-```
 
-pip:
-```
+# pip packages
 pip install pyright autopep8 pygments
 ```
 
