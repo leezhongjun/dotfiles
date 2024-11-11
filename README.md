@@ -1,6 +1,6 @@
 ## Dotfiles for fedora sway
 
-***Note: This is pretty old and outdated**
+**Note: This is pretty old and outdated**
 
 Included in config:
  - i3
