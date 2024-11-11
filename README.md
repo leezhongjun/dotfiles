@@ -84,14 +84,6 @@ tmux source ~/.tmux.conf
 gh extensions install github/gh-copilot
 ```
 
-#### Other notes:
-
- - `ctrl+v` to paste, `ctrl+x` to copy from android clipboard in fish
- - `ctrl+e` to interrupt
- - `ctrl+c` to switch to normal mode in fish shell
- - `ctrl+e` to remove suggestions in nvim
- - rust-analyzer's autocomplete doesn't work in a single .rs file.
-
 #### Swap caps lock and esc for keyboard (windows)
 
 https://renenyffenegger.ch/notes/Windows/registry/tree/HKEY_LOCAL_MACHINE/System/CurrentControlSet/Control/Keyboard-Layout/index
@@ -206,3 +198,10 @@ end)
 
 return config
 ```
+
+#### Other notes:
+
+ - `ctrl+e` to interrupt
+ - `ctrl+c` to switch to normal mode in fish shell
+ - `ctrl+e` to remove suggestions in nvim
+ - rust-analyzer's autocomplete doesn't work in a single .rs file.
