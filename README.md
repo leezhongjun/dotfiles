@@ -1,6 +1,6 @@
 ## Dotfiles for ubuntu wsl
 
-**Note: this is pretty old and outdated**
+**Note: This is pretty old and outdated**
 
 Included in config:
  - tmux
