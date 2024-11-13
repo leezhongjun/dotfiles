@@ -161,5 +161,3 @@ gh extensions install github/gh-copilot
 https://github.com/alexandru-balan/Stremio-Install-Scripts
 ```
 
-#### Other notes
- - `ctrl+e` to interrupt
