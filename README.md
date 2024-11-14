@@ -104,7 +104,6 @@ xrandr --output HDMI-0 --gamma 1.0:0.869:0.737
 
 #### Other notes:
 
- - `ctrl+e` to interrupt
  - `ctrl+c` to switch to normal mode in fish shell
  - `ctrl+e` to remove suggestions in nvim
  - rust-analyzer's autocomplete doesn't work in a single .rs file.
