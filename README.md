@@ -63,6 +63,23 @@ adb shell "settings put global settings_enable_monitor_phantom_procs false"
 
 https://github.com/ris58h/exkeymo-web
 
+#### Copilot Neovim setup
+
+1. Go into insert mode in Neovim
+2. Exit insert mode
+3. Type `:Copilot auth` and follow the instructions
+
+#### Copilot CLI setup
+
+1. Install extension
+```
+gh extension install github/github-copilot
+```
+2. Ask it to suggest a command
+```
+ghcs "${DESCRIPTION_OF_COMMAND}"
+```
+
 #### Other notes:
 
  - `ctrl+v` to paste, `ctrl+x` to copy from android clipboard in fish

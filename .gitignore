@@ -7,4 +7,4 @@
 !README.md
 !cpbooster-config.json
 .config/gh/hosts.yml
-.config/github-copilot/hosts.json
+.config/github-copilot/*
