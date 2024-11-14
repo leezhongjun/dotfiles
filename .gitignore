@@ -1,0 +1,16 @@
+/*
+!/.config
+!.tmux.conf
+!.gitignore
+!README.md
+!.gitconfig
+.config/gh/*
+.config/GitHub Desktop/*
+.config/github-copilot/*
+.config/gh-copilot/*
+.config/configstore/*
+.config/zed/*
+!.config/zed/settings.json
+.config/wslu/
+.config/Code/
+**/.DS_Store
