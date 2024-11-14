@@ -200,7 +200,6 @@ return config
 
 #### Other notes:
 
- - `ctrl+e` to interrupt
  - `ctrl+c` to switch to normal mode in fish shell
  - `ctrl+e` to remove suggestions in nvim
  - rust-analyzer's autocomplete doesn't work in a single .rs file.
