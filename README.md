@@ -89,6 +89,9 @@ StartupNotify=false
 #### Github Copilot CLI
 ```
 gh extensions install github/gh-copilot
+
+# To use
+ghcs "${DESCRIBE_COMMAND}"
 ```
 
 #### Stremio

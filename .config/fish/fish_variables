@@ -53,3 +53,9 @@ SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
 SETUVAR fish_user_paths:/home/zj/\x2ecargo/bin\x1e/home/zj/go/bin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/zj/\x2elocal/share/nvm/v22\x2e2\x2e0/bin\x1e/home/zj/\x2elocal/bin
 SETUVAR --export term:kitty
+SETUVAR --export fish_cursor_default:block
+SETUVAR --export fish_cursor_insert:line
+SETUVAR --export fish_cursor_replace:underscore
+SETUVAR --export fish_cursor_replace_one:underscore
+SETUVAR --export fish_cursor_visual:block
+SETUVAR --export fish_external_cursor:line
