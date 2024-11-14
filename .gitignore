@@ -10,3 +10,4 @@
 .config/configstore/*
 .config/wslu/
 .config/Code/
+**/.DS_Store
