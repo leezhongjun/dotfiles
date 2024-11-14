@@ -54,3 +54,10 @@ SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
 SETUVAR fish_user_paths:/home/h/\x2ecargo/bin\x1e/home/h/go/bin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/h/\x2elocal/share/nvm/v22\x2e2\x2e0/bin\x1e/home/h/\x2elocal/bin
+
+SETUVAR --export fish_cursor_default:block
+SETUVAR --export fish_cursor_insert:line
+SETUVAR --export fish_cursor_replace:underscore
+SETUVAR --export fish_cursor_replace_one:underscore
+SETUVAR --export fish_cursor_visual:block
+SETUVAR --export fish_external_cursor:line

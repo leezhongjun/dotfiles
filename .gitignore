@@ -6,6 +6,6 @@
 !.gitconfig
 .config/gh/hosts.yml
 .config/GitHub Desktop/*
-.config/github-copilot/hosts.json
+.config/github-copilot/*
 .config/wslu/
 .config/Code/
