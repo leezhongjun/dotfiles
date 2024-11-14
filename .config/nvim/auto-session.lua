@@ -1,9 +1,0 @@
--- local Plugin = { "rmagatti/auto-session" }
--- Plugin.opts = {
--- 	log_level = "error",
--- 	auto_session_enable_last_session = true,
--- 	auto_session_enabled = false,
--- 	auto_session_create_enabled = true,
--- }
---
--- return Plugin
