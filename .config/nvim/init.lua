@@ -473,7 +473,7 @@ require("lazy").setup({
 				rust = { "rustfmt" },
 				go = { "gofmt" },
 				c = { "clang-format" },
-				cpp = { "clang-format" },
+				-- cpp = { "clang-format" },
 				markdown = { "markdown-toc" },
 				json = { "jq" },
 				-- javascript = { { "prettierd", "prettier" } },

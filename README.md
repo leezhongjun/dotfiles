@@ -66,7 +66,6 @@ https://github.com/ris58h/exkeymo-web
 #### Other notes:
 
  - `ctrl+v` to paste, `ctrl+x` to copy from android clipboard in fish
- - `ctrl+e` to interrupt
  - `ctrl+c` to switch to normal mode in fish shell
  - `ctrl+e` to remove suggestions in nvim
  - Must use physical keyboard to do `alt+hjkl` window resizing
