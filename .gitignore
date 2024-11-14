@@ -7,5 +7,6 @@
 .config/gh/hosts.yml
 .config/GitHub Desktop/*
 .config/github-copilot/*
+.config/configstore/*
 .config/wslu/
 .config/Code/
