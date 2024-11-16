@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:/usr/bin/nvim
+SETUVAR --export LOCAL_NOTEBOOK_DEV:1
 SETUVAR --export --path PKG_CONFIG_PATH:/usr/share/pkgconfig/
 SETUVAR --export TERM:tmux\x2d256color
 SETUVAR --export --path TMUX_MANAGER_PLUGIN_PATH:/home/h/\x2etmux/plugins/
@@ -39,6 +40,12 @@ SETUVAR fish_color_selection:\x2d\x2dbackground\x3d283457
 SETUVAR fish_color_status:red
 SETUVAR fish_color_user:\x1d
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
+SETUVAR --export fish_cursor_default:block
+SETUVAR --export fish_cursor_insert:line
+SETUVAR --export fish_cursor_replace:underscore
+SETUVAR --export fish_cursor_replace_one:underscore
+SETUVAR --export fish_cursor_visual:block
+SETUVAR --export fish_external_cursor:line
 SETUVAR fish_key_bindings:fish_vi_key_bindings
 SETUVAR fish_pager_color_background:\x1d
 SETUVAR fish_pager_color_completion:c0caf5
@@ -54,10 +61,3 @@ SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
 SETUVAR fish_user_paths:/home/h/\x2ecargo/bin\x1e/home/h/go/bin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/h/\x2elocal/share/nvm/v22\x2e2\x2e0/bin\x1e/home/h/\x2elocal/bin
-
-SETUVAR --export fish_cursor_default:block
-SETUVAR --export fish_cursor_insert:line
-SETUVAR --export fish_cursor_replace:underscore
-SETUVAR --export fish_cursor_replace_one:underscore
-SETUVAR --export fish_cursor_visual:block
-SETUVAR --export fish_external_cursor:line

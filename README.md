@@ -120,6 +120,7 @@ EndSection
 2. In the search bar, type `gfx.webrender.all` and set it to `true`.
 3. In the search bar, type `media.ffmpeg.vaapi.enabled` and set it to `true`.
 4. In the search bar, type `toolkit.tabbox.switchByScrolling` and set it to `true`.
+4. In the search bar, type `browser.zoom.siteSpecific` and set it to `false`.
 
 
 #### Nvidia settings

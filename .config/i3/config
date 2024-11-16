@@ -61,6 +61,7 @@ bindsym $mod+Return exec kitty --working-directory=$(cat /tmp/whereami)
 
 # start firefox
 bindsym $mod+backslash exec firefox
+bindsym $mod+Shift+backslash exec firefox -private-window
 
 # start stremio
 bindsym $mod+equal exec stremio

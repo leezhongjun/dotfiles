@@ -10,4 +10,8 @@
 .config/configstore/*
 .config/wslu/
 .config/Code/
+.config/go/telemetry/
+.config/nextjs-nodejs/
+.config/dconf/
+.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
 **/.DS_Store
