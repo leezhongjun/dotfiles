@@ -11,6 +11,7 @@
 .config/configstore/*
 .config/zed/*
 !.config/zed/settings.json
+!cpbooster-config.json
 .config/wslu/
 .config/Code/
 **/.DS_Store
