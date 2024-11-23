@@ -2,6 +2,7 @@
 # VERSION: 3.0
 SETUVAR --export EDITOR:/usr/local/bin/nvim
 SETUVAR --export --path PKG_CONFIG_PATH:/usr/share/pkgconfig/
+SETUVAR --export QTDIR:/usr/local/opt/qt\x405
 SETUVAR --export TERM:tmux\x2d256color
 SETUVAR --export --path TMUX_MANAGER_PLUGIN_PATH:/home/h/\x2etmux/plugins/
 SETUVAR --export --path TMUX_PLUGIN_MANAGER_PATH:/home/h/\x2etmux/plugins/
@@ -59,4 +60,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3d283457
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/usr/local/opt/unzip/bin\x1e/Users/h/\x2ecargo/bin\x1e/home/h/\x2ecargo/bin\x1e/home/h/go/bin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/h/\x2elocal/share/nvm/v22\x2e2\x2e0/bin\x1e/home/h/\x2elocal/bin\x1e/usr/local/bin\x1e/System/Cryptexes/App/usr/bin\x1e/usr/bin\x3a/bin\x3a/usr/sbin\x1e/sbin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/local/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/appleinternal/bin\x1e/Library/Frameworks/Python\x2eframework/Versions/3\x2e12/bin
+SETUVAR fish_user_paths:/usr/local/opt/qt\x405/bin\x1e/usr/local/opt/unzip/bin\x1e/Users/h/\x2ecargo/bin\x1e/home/h/\x2ecargo/bin\x1e/home/h/go/bin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/h/\x2elocal/share/nvm/v22\x2e2\x2e0/bin\x1e/home/h/\x2elocal/bin\x1e/usr/local/bin\x1e/System/Cryptexes/App/usr/bin\x1e/usr/bin\x3a/bin\x3a/usr/sbin\x1e/sbin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/local/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/bin\x1e/var/run/com\x2eapple\x2esecurity\x2ecryptexd/codex\x2esystem/bootstrap/usr/appleinternal/bin\x1e/Library/Frameworks/Python\x2eframework/Versions/3\x2e12/bin

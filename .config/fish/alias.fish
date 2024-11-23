@@ -6,6 +6,7 @@ alias v="nvim"
 alias tmux="tmux -u"
 alias r="ranger"
 alias l="ls"
+alias ibrew="arch -x86_64 /usr/local/bin/brew"
 
 function gc
     git clone "https://github.com/$argv[1]"

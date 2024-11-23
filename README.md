@@ -12,15 +12,12 @@ This works with M3 MacBook Air
 
 ### Instructions
 
-#### Fish
-Install fish shell from the macos installer at https://fishshell.com
-
 #### Packages
 ```
 brew update && brew upgrade
 
 # Install packages
-brew install node miniconda jq cmake neovim yadm gh git wget ripgrep make unzip pandoc go luarocks lua-language-server fzf vlc ranger python autopep8 pyright pygments
+brew install fish node miniconda jq cmake neovim yadm gh git wget ripgrep make unzip pandoc go luarocks lua-language-server fzf vlc ranger python autopep8 pyright pygments
 
 # Change shell to fish
 sudo bash -c 'echo $(which fish) >> /etc/shells'
@@ -52,9 +49,8 @@ npm install -g markdown-toc
 brew tap epk/epk
 brew install font-sf-mono-nerd-font
 
-# replace yourusername
-sudo chown -R yourusername:staff ~/.cache
-sudo chown -R yourusername:staff ~/.local
+sudo chown -R $USER:staff ~/.cache
+sudo chown -R $USER:staff ~/.local
 ```
 
 #### Alfred
@@ -71,3 +67,8 @@ gh extensions install github/gh-copilot
 ghcs "${DESCRIBE_COMMAND}"
 ghce "${EXPLAIN_COMMAND}"
 ```
+
+#### Stremio
+https://github.com/noripcord/stremio-m1
+
+

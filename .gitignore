@@ -4,6 +4,7 @@
 !.gitignore
 !README.md
 !.gitconfig
+.config/QtProject/*
 .config/gh/*
 .config/GitHub Desktop/*
 .config/github-copilot/*
