@@ -51,6 +51,10 @@ npm install -g markdown-toc
 # nerd font
 brew tap epk/epk
 brew install font-sf-mono-nerd-font
+
+# replace yourusername
+sudo chown -R yourusername:staff ~/.cache
+sudo chown -R yourusername:staff ~/.local
 ```
 
 #### Alfred

@@ -6,3 +6,5 @@
 [user]
 	name = Henry
 	email = 80515759+henrlly@users.noreply.github.com
+[core]
+	editor = nvim
