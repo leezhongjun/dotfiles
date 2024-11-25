@@ -1,9 +1,8 @@
 -- [[ Settings ]]
 
 -- Enable Copilot Suggestions
-if vim.g.COPILOT_ENABLED then
-	vim.g.COPILOT_ENABLED = true
-end
+-- see keybinds.lua to toggle / see status
+-- vim.g.COPILOT_ENABLED = true
 
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = " "
