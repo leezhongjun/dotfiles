@@ -1,8 +1,8 @@
 -- [[ Settings ]]
 
--- Enable Inlay Hints
-if vim.lsp.inlay_hint then
-	vim.lsp.inlay_hint.enable(true)
+-- Enable Copilot Suggestions
+if vim.g.COPILOT_ENABLED then
+	vim.g.COPILOT_ENABLED = true
 end
 
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)

@@ -8,13 +8,17 @@ vim.keymap.set("n", ",m", function()
 	vim.cmd(":%s/\r//g")
 end)
 
--- Toggle inline hints
-vim.keymap.set("n", "<leader>th", function()
-	if vim.lsp.inlay_hint then
-		vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled(nil))
-		print("Inlay Hints", vim.lsp.inlay_hint.is_enabled(nil) and "Enabled" or "Disabled")
-	end
-end, { desc = "[T]oggle Inlay [H]ints" })
+-- Copilot
+-- Copilot status
+vim.keymap.set("n", "<leader>ts", function()
+	print("Copilot", vim.g.COPILOT_ENABLED and "Enabled" or "Disabled")
+end, { desc = "Copilo[t] [S]tatus" })
+-- Toggle Copilot
+vim.keymap.set("n", "<leader>tt", function()
+	vim.g.COPILOT_ENABLED = not vim.g.COPILOT_ENABLED
+	vim.cmd("Copilot " .. (vim.g.COPILOT_ENABLED and "enable" or "disable"))
+	print("Copilot toggled to", vim.g.COPILOT_ENABLED and "Enabled" or "Disabled")
+end, { desc = "[T]oggle Copilo[t]" })
 
 -- Toggle terminal
 -- Click C-g to toggle the terminal
