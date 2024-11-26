@@ -2,6 +2,7 @@
 # VERSION: 3.0
 SETUVAR --export EDITOR:/usr/bin/nvim
 SETUVAR --export LOCAL_NOTEBOOK_DEV:1
+SETUVAR --export --path PATH:/home/h/bin
 SETUVAR --export --path PKG_CONFIG_PATH:/usr/share/pkgconfig/
 SETUVAR --export TERM:tmux\x2d256color
 SETUVAR --export --path TMUX_MANAGER_PLUGIN_PATH:/home/h/\x2etmux/plugins/

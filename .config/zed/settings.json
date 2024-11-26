@@ -4,19 +4,54 @@
 // documentation: https://zed.dev/docs/configuring-zed
 //
 // To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
+// custom settings, run the `zed: Open Default Settings` command
+// from the command palette
 {
+  "lsp": {
+    "clangd": {
+      "binary": {
+        // "path": "/usr/bin/g++"
+        // "arguments": [
+        //   "--background-index",
+        //   "--compile-commands-dir=build",
+        //   "--clang-tidy",
+        //   "--clang-tidy-checks=*",
+        //   "--header-insertion=never",
+        //   "--header-insertion-decorators=none"
+        // ]
+      }
+    }
+  },
+
+  "features": {
+    // "inline_completion_provider": "copilot"
+    "inline_completion_provider": "none"
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
   "vim_mode": true,
+
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
+
   "ui_font_size": 16,
   "buffer_font_size": 16,
+  "buffer_font_features": {
+    "calt": false
+  },
+
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Ayu Dark"
-  }
+    "dark": "Tokyo Night"
+  },
+
+  "cursor_blink": false
 }
