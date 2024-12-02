@@ -1,5 +1,5 @@
 {
-  "contestsDirectory": "/data/data/com.termux/files/home/Contests",
+  "contestsDirectory": "/data/data/com.termux/files/home/github/competitive-programming/",
   "port": 1327,
   "editor": "konsole",
   "closeAfterClone": false,
@@ -14,7 +14,7 @@
   "executableFileExtension": "exe",
   "languages": {
     "cpp": {
-      "template": "",
+      "template": "/data/data/com.termux/files/home/github/competitive-programming/template.cpp",
       "command": "g++ -std=gnu++17 -include ../stdc++.h",
       "debugCommand": "g++ -std=gnu++17 -DDEBUG -Wshadow -Wall",
       "aliases": {

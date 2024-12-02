@@ -5,6 +5,7 @@ alias oldvim="nvim"
 alias v="nvim"
 alias tmux="tmux -u"
 alias r="ranger"
+alias cpts=" cp *.cpp ~/storage/shared/cp"
 
 function gc
     git clone "https://github.com/$argv[1]"

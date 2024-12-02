@@ -117,3 +117,8 @@ function fish_clipboard_paste
         commandline -i -- $data
     end
 end
+
+bind y fish_clipboard_copy
+bind yy fish_clipboard_copy
+bind p fish_clipboard_paste
+
