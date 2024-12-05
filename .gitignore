@@ -10,6 +10,8 @@
 .config/configstore/*
 .config/wslu/
 .config/Code/
+.config/transmission/
+.config/vlc/
 .config/google-chrome/
 .config/go/telemetry/
 .config/nextjs-nodejs/
