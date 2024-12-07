@@ -1,9 +1,8 @@
 -- [[ Settings ]]
 
--- Enable Inlay Hints
-if vim.lsp.inlay_hint then
-	vim.lsp.inlay_hint.enable(true)
-end
+-- Enable Copilot Suggestions
+-- see keybinds.lua to toggle / see status
+-- vim.g.COPILOT_ENABLED = true
 
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = " "

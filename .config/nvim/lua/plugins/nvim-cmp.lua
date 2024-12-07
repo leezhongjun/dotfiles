@@ -25,7 +25,7 @@ Plugin.opts = function()
 	luasnip.config.setup({})
 
 	cmp.setup({
-		enabled = vim.lsp.inlay_hint.is_enabled(),
+		enabled = true,
 		snippet = {
 			expand = function(args)
 				luasnip.lsp_expand(args.body)
