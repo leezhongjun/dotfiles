@@ -120,7 +120,8 @@ EndSection
 2. In the search bar, type `gfx.webrender.all` and set it to `true`.
 3. In the search bar, type `media.ffmpeg.vaapi.enabled` and set it to `true`.
 4. In the search bar, type `toolkit.tabbox.switchByScrolling` and set it to `true`.
-4. In the search bar, type `browser.zoom.siteSpecific` and set it to `false`.
+5. In the search bar, type `browser.zoom.siteSpecific` and set it to `false`.
+6. In the search bar, type `layout.css.devPixelsPerPx` and set it to `1.0`.
 
 
 #### Nvidia settings
@@ -161,7 +162,5 @@ ghcs "${DESCRIBE_COMMAND}"
 ```
 
 #### Stremio
-```
 https://github.com/alexandru-balan/Stremio-Install-Scripts
-```
 
